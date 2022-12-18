@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<style>
+*{
+    margin: 10px;
+    padding: 0;
+}  
+
+.header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.left{
+    display: flex;
+}
+ul{
+    display: flex;
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+    padding :10px
+}
+.headerCompo{
+    background-color:rgb(250, 251, 252);
+    box-shadow: 2px light-grey ;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.leftele{
+    display: flex;
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    height: 800px;
+    width: 1300px;
+     
+}
+.lefttext{
+    display: flex;
+}
+.ui_bold{
+    font-weight: bold;
+}
+.righttext{
+    display: flex;
+}
+.textinner{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(241, 248, 255);
+    
+    box-shadow: 1px 3px light-grey ;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.lefttext1{
+    display: flex;
+}
+.textinner1{
+    display: flex;
+    justify-content:space-between;
+    border-top:1px solid lightgray;
+    margin-top: -10px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.textinner2{
+    display: flex;
+    justify-content:space-between;
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+    margin-top: -10px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.lefttextcontainer{
+    /*
+    border: 10px solid red;*/
+    flex-grow: 1;
+}
+.textcontainer{
+  /*border: 10px solid black; */ 
+}
+.wholetextcontainer{
+    display: flex;
+    /*border: 5px solid blue;*/
+}
+.tags{
+    background-color: rgb(199, 228, 247);
+    border-radius: 10px;
+    justify-content: center;
+}
+.items{
+    color: blue;
+}
+.itemtags{
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.leftlow{
+    display: flex;
+}
+.ui_bold_green{
+    color: green;
+   margin: 10px;
+}
+.green_border{
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.ui_gray{
+    color:gray;
+}
+.last_c{
+    padding-left: 20px;
+    padding-top: -20px;
+    margin-top: -20px;
+}
+.li{
+    margin-left: -20px;
+    padding-left: -20px;
+}
+.l_low{
+    margin-top: -2px;
+    margin-left: -10px;
+}
+.color{
+    font-weight:bold;
+    margin-bottom: -10px;
+    border-bottom: 1px solid red;
+}
+</style>
+
+<body>
+
+<section class="headerCompo">
+   <div class="header">
+       <div class="left">
+        <img src="icon1.png"height="20px">
+       
+       <div class="text">
+         <h4 class="ui blue medium header">fabiocarrara/ visual-sentiment-analysis</h4>
+       </div>
+       </div>
+       
+       <div class="right">
+        <div class="ui labeled button" tabindex="0">
+            <div class="ui basic button">
+              <i class="eye icon"></i> Watch <i class="dropdown icon"></i>
+            </div>
+            <a class="ui basic label">
+              1
+            </a>
+          </div>
+          <div class="ui labeled button" tabindex="0">
+            <div class="ui basic button">
+              <i class="star outline icon"></i> Star
+            </div>
+            <a class="ui basic label">
+              8
+            </a>
+          </div>
+          <div class="ui labeled button" tabindex="0">
+            <div class="ui basic button">
+              <i class="fork icon"></i> fork
+            </div>
+            <a class="ui basic label">
+              1
+            </a>
+          </div>
+       </div>
+   </div>
+   
+    <nav>
+        <ul>
+            <li class="color"><i class="code icon"></i>Code</li>
+            <li><i class="dot circle outline icon"></i>Issues</li>
+
+            <div class="li"><img src="icon4.png"height="20px"></div>
+            <div><img src="icon5.png"height="20px"></div>
+            <li class="li">Pull requests</li>
+            <li><i class="play circle outline icon"></i>Actions</li>
+            <div><img src="icon8.png"height="20px"></div>
+            <li class="li">Projects</li>
+            <div><img src="icon6.png"height="20px"></div>
+            <li class="li">Wiki</li>
+            <div><img src="icon7.png"height="20px"></div>
+            <li class="li">Security</li>
+            <li><i class="chart line icon"></i>Insight</li>
+        </ul>
+    </nav>
+</section>
+<section class="wholetextcontainer">
+<section class="lefttextcontainer">
+<section class="elements">
+    <div class="leftele">
+        <div class="ui labeled button" tabindex="0">
+            <div class="ui basic button">
+              <i class="code branch icon"></i>main<i class="dropdown icon"></i>
+            </div>
+        </div>
+        <ui><i class="code branch icon"></i>1 branch</ui>
+        <ui><i class="tag icon"></i>1 tag</ui>
+    </div>
+    <div class="rightele">
+        <div class="ui basic button">
+             Go to file
+        </div>
+        <div class="ui basic button">
+            Add file<i class="dropdown icon"></i>
+        </div>
+        <div class="ui green button">
+            <i class="download icon"></i>Code <i class="dropdown icon"></i>
+        </div> 
+    </div>
+</section>
+<section class="textcontainer">
+    <div class="textinner">
+        <div class="lefttext">
+            
+                    <img src="icon9.png"height="20px">
+                    <div class="ui_bold">fabiocarrara</div>
+                    <ul>update README</ul>
+                    <img src="icon10.png"height="20px">
+               
+        </div>
+        <div class="righttext">
+             <div>85fb622 on Apr 6</div>
+            <img src="icon12.png"height="20px">
+            <div class="ui_bold">7</div>
+            <ul> commits</ul>
+       
+        </div>
+    </div>
+    <div class="textinner1">
+        <div class="lefttext1">
+            
+            <div><i class="file outline icon"></i></div>
+            
+            <ul>README.md</ul>
+                    
+               
+        </div>
+        <div class="middletext1">
+            
+            <ul>updated README</ul>
+       
+        </div>
+        <div class="righttext1">
+           <ul>4 months ago</ul>
+      
+       </div>
+    </div>
+    <div class="textinner1">
+        <div class="lefttext1">
+            
+            <div><i class="file outline icon"></i></div>
+            
+            <ul>alexnet.py</ul>
+                    
+               
+        </div>
+        <div class="middletext1">
+            
+            <ul>added converted model</ul>
+       
+        </div>
+        <div class="righttext1">
+           <ul>9 months ago</ul>
+      
+       </div>
+    </div>
+    <div class="textinner1">
+        <div class="lefttext1">
+            
+            <div><i class="file outline icon"></i></div>
+            
+            <ul>check_outputs.py</ul>
+                    
+               
+        </div>
+        <div class="middletext1">
+            
+            <ul>added conversion scripts</ul>
+       
+        </div>
+        <div class="righttext1">
+           <ul>9 months ago</ul>
+      
+       </div>
+       
+    </div>
+    <div class="textinner1">
+        <div class="lefttext1">
+            
+            <div><i class="file outline icon"></i></div>
+            
+            <ul>converted_models.sh</ul>
+                    
+               
+        </div>
+        <div class="middletext1">
+            
+            <ul>added conversion scripts</ul>
+       
+        </div>
+        <div class="righttext1">
+           <ul>9 months ago</ul>
+      
+       </div>
+       
+    </div>
+    <div class="textinner1">
+        <div class="lefttext1">
+            
+            <div><i class="file outline icon"></i></div>
+            
+            <ul>download_models.sh</ul>
+                    
+               
+        </div>
+        <div class="middletext1">
+            
+            <ul>added model download script</ul>
+       
+        </div>
+        <div class="righttext1">
+           <ul>9 months ago</ul>
+      
+       </div>
+       
+    </div>
+    <div class="textinner1">
+        <div class="lefttext1">
+            
+            <div><i class="file outline icon"></i></div>
+            
+            <ul>predict.py</ul>
+                    
+               
+        </div>
+        <div class="middletext1">
+            
+            <ul>added converted models</ul>
+       
+        </div>
+        <div class="righttext1">
+           <ul>9 months ago</ul>
+      
+       </div>
+       
+    </div>
+    <div class="textinner2">
+        <div class="lefttext1">
+            
+            <div><i class="file outline icon"></i></div>
+            
+            <ul>vgg.py</ul>
+                    
+               
+        </div>
+        <div class="middletext1">
+            
+            <ul>added converted models</ul>
+       
+        </div>
+        <div class="righttext1">
+           <ul>9 months ago</ul>
+      
+       </div>
+       
+    </div>
+</section>
+</section>
+     <section class="righttexcontainer">
+         <div>
+             <span class="ui small header">About</span>
+             <p>
+                 PyTorch port of models for Visual<br>
+                 Sentiment Analysis pre-trained on the<br>
+                 T4SA dataset
+             </p>
+         </div>
+         <div class="itemtags">
+            <div class="tags">
+                <span class="items">deep-learning</span>
+            </div>
+            <div class="tags">
+                <span class="items">pyTorch</span>
+            </div>
+            <div class="tags">
+                <span class="items">convolutional-neural-networks</span>
+            </div>
+            <div class="tags">
+                <span class="items">cross-media</span>
+            </div>
+            <div class="tags">
+                <span class="items">visual-sentimental-analysis</span>
+            </div>
+         </div>
+         <div class="leftlow">
+            <div><img src="icon6.png"height="20px"></div>
+            <li class="li">Read me</li>
+         </div>
+         <hr>
+         <div class="leftlow">
+            <div class="ui_bold">Releasses</div>
+            <div class="l_low"><img src="icon4.png"height="20px"></div>
+         </div>
+         <div class="leftlow">
+         <ui class="ui_bold"><i class="tag icon"></i>Pre-trained Pytorch models</ui>
+         <div class="green_border"><ui class="ui_bold_green">Latest</ui></div>
+         </div>
+         <div class="last_c">
+            <ui class="ui_gray">on Oct 19,2020</ui>
+         </div>
+     </section>
+</section>
+</body>
+
+</html>
+
